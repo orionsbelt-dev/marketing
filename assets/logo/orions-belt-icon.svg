@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 -150 300 300" width="1024" height="1024">
+  <title>Orion's Belt</title>
+  <defs>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="tile"><rect x="-150" y="-150" width="300" height="300" rx="66"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect x="-150" y="-150" width="300" height="300" fill="#0f1b33"/>
+    <g transform="translate(0 4) scale(1.45)">
+      <g fill="#f4c95d" filter="url(#glow)" transform="rotate(-18)">
+        <circle cx="-48" cy="0" r="11"/>
+        <circle cx="0" cy="-8" r="11"/>
+        <circle cx="48" cy="0" r="11"/>
+      </g>
+    </g>
+  </g>
+</svg>
